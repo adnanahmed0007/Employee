@@ -9,10 +9,10 @@ const userResumeSchema = new mongoose.Schema(
         },
         fileUrl: {
             type: String,
-            required: true, // Cloudinary URL of the uploaded resume
+            required: true,  
         },
         cloudinaryId: {
-            type: String, // optional: store public_id for deletion
+            type: String, 
         },
     },
     { timestamps: true }
