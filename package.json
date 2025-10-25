@@ -12,10 +12,15 @@
   "description": "",
   "dependencies": {
     "bcrypt": "^6.0.0",
+    "cloudinary": "^2.8.0",
     "cookie-parser": "^1.4.7",
     "express": "^5.1.0",
+    "fs": "^0.0.1-security",
     "jsonwebtoken": "^9.0.2",
+    "mammoth": "^1.11.0",
     "mongoose": "^8.19.2",
-    "nodemailer": "^7.0.10"
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.10",
+    "pdf-parse": "^2.4.5"
   }
 }

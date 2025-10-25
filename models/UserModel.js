@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
-import { type } from "os";
-import { boolean } from "webidl-conversions";
+
 
 const userSchema = new mongoose.Schema(
     {

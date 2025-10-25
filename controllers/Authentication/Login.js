@@ -9,7 +9,7 @@ const Login = async (req, res) => {
             const findUser = await UserModel.findOne({ email });
             const OtpGenerated = Math.random() * 10 * 10 * 10 * 10;
             const otp = Math.floor(OtpGenerated);
-            const sendotpuser = await sendOtp(email, otp)
+            await sendOtp(email, otp)
             findUser.otp = otp;
             findUser.isVerified = false;
             if (!findUser) {

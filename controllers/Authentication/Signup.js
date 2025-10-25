@@ -1,5 +1,5 @@
 import bcrypt from "bcrypt";
-import UserModel from "../../models/UserModel.js"
+import UserModel from "../../models/UserModel.js";
 import GeneratedToken from "../../utils/GeneratedToken.js";
 import sendOtp from "../../utils/sendotp.js";
 const UserLogin = async (req, res) => {
@@ -17,7 +17,7 @@ const UserLogin = async (req, res) => {
             const passwordHash = await bcrypt.hash(password, 5);
             const OtpGenerated = Math.random() * 10 * 10 * 10 * 10;
             const otp = Math.floor(OtpGenerated);
-            console.log(otp)
+
 
             const userNew = new UserModel({
                 email: email,
